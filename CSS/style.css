@@ -1,0 +1,336 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+
+header{
+    padding:5px;
+    background-color: blue;
+    color:#fff;
+    height:8vh;
+    padding:2vh;      
+    position:fixed;
+    top:0;
+    width:100vw;
+}
+
+
+.logo{
+    font-size:2rem;
+    color:#fff;
+    line-height: 80px;
+    padding:10%;
+    font-weight:bold;
+}
+
+nav{
+    display:inline;
+    float:right;
+    margin-right:10px;
+    width:100%;
+    height:100%;
+    margin-top: 5px;
+    margin-left:10px;
+   
+}
+
+nav ul{
+    list-style: none;
+    float:right;
+    margin-right:20px;
+}
+
+nav ul li{
+    display:inline-block;
+    height:8vh;
+}
+
+.container{
+    width:80vw;
+    margin:auto;
+}
+
+nav ul li a{
+    color:cornsilk;
+    text-decoration: none;
+    font-size:1.2rem;
+    padding:7px 13px;
+    border-radius: 3px;
+    text-transform:uppercase;
+}
+
+nav ul li a:hover{
+    background-color: #1b9bff;   
+    transition: .5s;
+    height:100%;
+}
+
+#about-page{
+    padding:5rem;
+    height:30vh !important;
+    background-color: #770099;
+    color:#fff;
+    margin-top:30px;
+}
+
+.about-section{
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.about-desc{
+   margin-right:100px;
+}
+
+.about-img{
+    width:30vw !important;
+    margin-right:30px;
+}
+
+@media screen and (max-width: 600px) {
+    .about-section{
+        flex-direction:column;
+    }
+
+    #about-page{
+        height:80vh !important;
+        margin-top:20px;
+    }
+}
+
+.logos{
+    margin:0.5rem;
+}
+
+.experience{
+    margin:50px;
+}
+.exprience h1{
+ text-align:center;
+ color:#f74470;
+ margin-bottom:50px;
+}
+
+.exprience h1 .fa{
+    font-size:50px;
+    color:#5352d4;
+   }
+
+.experience h2{
+    font-size:20px;
+    margin-top:30px;
+    color:#fff;
+}
+
+.education h1{
+    text-align:center;
+    color:#f74470;
+    margin-bottom:50px;
+   }
+   
+   .education h1 .fa{
+       font-size:50px;
+       color:#5352d4;
+      }
+   
+   .education h2{
+       font-size:20px;
+       margin-top:30px;
+       color:#fff;
+   }
+
+   .projects h1{
+    text-align:center;
+    color:#f74470;
+    margin-bottom:50px;
+   }
+   
+   .projects h1 .fa{
+       font-size:50px;
+       color:#5352d4;
+      }
+   
+   .projects h2{
+       font-size:20px;
+       margin-top:30px;
+       color:#fff;
+   }
+
+   .about-img{
+       height: 200px;
+       width:200px;
+       
+   }
+
+ 
+
+   img{
+       height:100%;
+       width:100%;
+       border-radius:50%;
+   }
+
+   div.card{
+       position:relative;
+       width:31%;
+       margin:auto;
+       min-height:300px;     
+   }
+
+   section.cardsection{
+       display:flex;
+   }
+
+   section.cardsection div.card div.front{
+    position:absolute;
+    width:100%;
+    min-height:300px;
+    background-color:#fff;
+    border-radius:20px;
+    color:#000;
+    border:1px solid #aaa;
+    box-shadow: 2px 2px #aaa;
+    backface-visibility:hidden;
+    transform: rotateY(0deg);
+    perspective: 800px;
+    transition: transform 0.4s;
+}
+   section.cardsection div.card div.back{
+    box-sizing:border-box;
+    padding:6px 5px;
+    width:100%;
+    min-height:300px;
+    background-color:#ddd;
+    border-radius:20px;
+    color:#f74470;
+    backface-visibility:hidden;
+    transform: rotateY(180deg);
+    perspective: 800px;
+    position:absolute;
+    transition: transform 0.4s;
+   }
+
+   div.back h2{
+       color: #770099;
+       text-align:center;
+       font-style: italic;
+       font-size: 40px;
+   }
+
+   div.back p{
+    color: #770099;
+    text-align:center;
+    font-size: 1.5rem;
+}
+
+div.front div.project_title{
+    color: #770099;
+    text-align:center;
+    font-style: italic;
+    font-size: 40px;
+    margin:auto;
+    vertical-align: middle;
+}
+   section.cardsection div.card:hover div.front{
+       transform:perspective(600px) rotateY(-180deg);
+   }
+
+   
+   section.cardsection div.card:hover div.back{
+    transform:perspective(600px) rotateY(0deg);
+}
+
+
+footer{
+    height:10vh;
+    background-color: #ad00ff;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color:white;
+    float:right;
+    line-height:8px;
+    margin-right:40px;
+    cursor:pointer;
+    display:none;
+}
+ 
+
+#check{
+    display:none;
+}
+
+
+@media(max-width:900px){
+    label.logo{
+        font-size:16px;
+        padding-left:50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;;
+    }
+}
+
+@media(max-width:600px){
+    .checkbtn{
+        display:block;
+    }
+
+    ul{
+        position: absolute;
+        width:100%;
+        height:100vh;
+        background:#2c3e50;
+        top:60px;
+        left:-120%;
+        text-align: center;
+        transition:all .5s;
+        z-index: 1000;
+    }
+
+    li{
+        display: block  !important;;
+    }
+
+    nav ul li a{
+        background:none;
+
+    }
+
+    nav ul li a:hover{
+        background:none;
+        color:#fff;
+
+    }
+
+    .cardsection{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #check:checked ~ ul{
+        left:0%;
+
+    }
+
+    div.card{
+        position:relative;
+        width:100%;
+        margin: 20px auto;
+        min-height:300px;     
+    }
+
+  
+
+
+    div.front div.project_title{
+        color: #770099;
+        text-align:center;
+        font-style: italic;
+        font-size: 20px;
+        margin:auto;
+        vertical-align: middle;
+    }
+}
