@@ -13,15 +13,16 @@ header{
     position:fixed;
     top:0;
     width:100vw;
+    z-index:1000;
 }
 
 
 .logo{
     font-size:2rem;
     color:#fff;
-    line-height: 80px;
-    padding:10%;
+    line-height: 40px;
     font-weight:bold;
+    padding-left:10px;
 }
 
 nav{
@@ -264,7 +265,12 @@ footer{
     }
 
     nav ul li a{
-        font-size: 16px;;
+        font-size: 16px;
+        color: #fff;
+    }
+
+    nav{
+        margin:0;
     }
 }
 
@@ -335,5 +341,6 @@ footer{
 #education{
     background: linear-gradient(to right, #2980b7, #6dd5fa, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding-left:50px;
+    padding-top:20px;
     color:#fff;
 }
