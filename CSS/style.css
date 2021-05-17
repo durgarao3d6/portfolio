@@ -1,6 +1,6 @@
 body{
     margin:0px;
-    padding:0px;
+    padding:0px;   
 }
 
 header{
@@ -8,8 +8,7 @@ header{
     background-color: blue;
     background: linear-gradient(to right, #e9072d, #f16e6e, #f0aeae);
     color:#fff;
-    height:8vh;
-    padding:2vh;      
+    height:8vh;     
     position:fixed;
     top:0;
     width:100%;
@@ -139,6 +138,10 @@ nav ul li a:hover{
        font-size:20px;
        margin-top:30px;
        color:#fff;
+   }
+
+   .education{
+    overflow-wrap: break-word;
    }
 
    .projects h1{
