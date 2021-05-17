@@ -12,7 +12,7 @@ header{
     padding:2vh;      
     position:fixed;
     top:0;
-    width:100vw;
+    width:100%;
     z-index:1000;
 }
 
@@ -81,6 +81,7 @@ nav ul li a:hover{
 
 .about-desc{
    margin-right:100px;
+   overflow-wrap: break-word;
 }
 
 .about-img{
