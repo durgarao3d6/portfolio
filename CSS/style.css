@@ -8,7 +8,7 @@ header{
     background-color: blue;
     background: linear-gradient(to right, #e9072d, #f16e6e, #f0aeae);
     color:#fff;
-    height:8vh;     
+    height:10vh;     
     position:fixed;
     top:0;
     width:100%;
@@ -88,7 +88,7 @@ nav ul li a:hover{
     margin-right:30px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .about-section{
         flex-direction:column;
     }
@@ -96,6 +96,7 @@ nav ul li a:hover{
     #about-page{
         height:120vh !important;
         margin-top:20px;
+        padding: 5rem 1rem 5rem 2rem;
     }
 }
 
@@ -264,13 +265,15 @@ footer{
 
 @media(max-width:900px){
     label.logo{
-        font-size:16px;
-        padding-left:50px;
+        font-size:13px;
+        padding-left:20px;
+        font-style: italic;
     }
 
     nav ul li a{
         font-size: 16px;
         color: #fff;
+        
     }
 
     nav{
@@ -278,7 +281,7 @@ footer{
     }
 }
 
-@media(max-width:600px){
+@media(max-width:858px){
     .checkbtn{
         display:block;
     }
@@ -329,6 +332,7 @@ footer{
     }
 
   
+    
 
 
     div.front div.project_title{
