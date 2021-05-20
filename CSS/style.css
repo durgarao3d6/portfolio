@@ -301,6 +301,55 @@ footer{
     }
 }
 
+
+
+
+#education{
+    background: linear-gradient(to right, #2980b7, #6dd5fa, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-left:50px;
+    padding-top:8vh;
+    color:#fff;
+}
+
+.socialMedia ul li a i.fa{
+    position:fixed;
+    right:-13%;
+    width:15%;
+    padding:20px;
+    font-size:130%;
+    z-index: 1000;
+    color:#fff;
+    border-radius: 10px 0 0 10px;
+    box-shadow:2px 5px 5px #888;
+    transition:right 0.8s,box-shadow 0.8s;
+}
+
+.socialMedia ul li a i.fa:hover{
+    right:-5%;
+    box-shadow:none;
+}
+
+
+
+.socialMedia ul li a i span{
+    margin-left:20%
+}
+
+.socialMedia ul li a i.fa-google-plus{
+    top:30%;
+    background-color: #d34839;
+}
+
+.socialMedia ul li a i.fa-facebook{
+    top:40%;
+    background-color: #3b5998;
+}
+
+.socialMedia ul li a i.fa-twitter{
+    top:50%;
+    background-color: #4099ff;
+}
+
 @media(max-width:858px){
     .checkbtn{
         display:block;
@@ -351,10 +400,6 @@ footer{
         min-height:300px;     
     }
 
-  
-    
-
-
     div.front div.project_title{
         color: #770099;
         text-align:center;
@@ -363,55 +408,15 @@ footer{
         margin:auto;
         vertical-align: middle;
     }
+
+    .socialMedia ul li a i.fa{      
+        font-size:100%; 
+        width:35%;
+        right:-30%;    
+    }
+
+    .socialMedia ul li a i.fa:hover{      
+        right:1.2%;     
+    }
 }
-
-
-#education{
-    background: linear-gradient(to right, #2980b7, #6dd5fa, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    padding-left:50px;
-    padding-top:8vh;
-    color:#fff;
-}
-
-.socialMedia ul li a i.fa{
-    position:fixed;
-    right:-13%;
-    width:15%;
-    height:3%;
-    padding:20px;
-    font-size:130%;
-    z-index: 1000;
-    color:#fff;
-    border-radius: 10px 0 0 10px;
-    box-shadow:2px 5px 5px #888;
-    transition:right 0.8s,box-shadow 0.8s;
-}
-
-.socialMedia ul li a i.fa:hover{
-    right:-5%;
-    box-shadow:none;
-}
-
-
-
-.socialMedia ul li a i span{
-    margin-left:20%
-}
-
-.socialMedia ul li a i.fa-google-plus{
-    top:30%;
-    background-color: #d34839;
-}
-
-.socialMedia ul li a i.fa-facebook{
-    top:40%;
-    background-color: #3b5998;
-}
-
-.socialMedia ul li a i.fa-twitter{
-    top:50%;
-    background-color: #4099ff;
-}
-
-
 
