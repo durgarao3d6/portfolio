@@ -3,12 +3,16 @@ body{
     padding:0px;   
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     padding:5px;
     background-color: blue;
-    background: linear-gradient(to right, #e9072d, #f16e6e, #f0aeae);
+    background: #fe0728;
     color:#fff;
-    height:10vh;     
+    height:8vh;     
     position:fixed;
     top:0;
     width:100%;
@@ -60,7 +64,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    background-color: #1b9bff;   
+    background-color: rgba(255,255,255,0.3);   
     transition: .5s;
     height:100%;
 }
@@ -79,7 +83,7 @@ nav ul li a:hover{
 }
 
 .about-desc{
-   margin-right:100px;
+   margin-right:50px;
    overflow-wrap: break-word;
 }
 
@@ -94,7 +98,7 @@ nav ul li a:hover{
     }
 
     #about-page{
-        height:120vh !important;
+        height:110vh !important;
         margin-top:20px;
         padding: 5rem 1rem 5rem 2rem;
     }
@@ -159,6 +163,11 @@ nav ul li a:hover{
        font-size:20px;
        margin-top:30px;
        color:#fff;
+   }
+
+   .logos:hover{
+       cursor: pointer;
+       color:#e9072d !important;
    }
 
    .about-img{
