@@ -350,6 +350,25 @@ footer{
     background-color: #4099ff;
 }
 
+.skillBars{
+    display:flex;
+    justify-content:space-between;
+}
+
+.skillSection{
+    padding-top:8vh;
+}
+
+.skillSection h1{
+    text-align:center;
+    color:#f74470;
+   }
+   
+   .skillSection h1 .fa{
+       font-size:50px;
+       color:#5352d4;
+      }
+
 @media(max-width:858px){
     .checkbtn{
         display:block;
@@ -417,6 +436,9 @@ footer{
 
     .socialMedia ul li a i.fa:hover{      
         right:1.2%;     
+    }
+    .skillBars{
+        flex-direction:column;
     }
 }
 
